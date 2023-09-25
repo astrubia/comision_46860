@@ -1,8 +1,10 @@
-body {
-    margin: 0;
-    padding: 0;
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  
+
+
   .containerHome {
     position: relative;
     width: 100%;
@@ -10,52 +12,52 @@ body {
     background-image: url("../pictures/fotoportada.jpeg");
     background-size: cover;
   }
-  
-   .overlay {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgba(0, 0, 0, 0.5);
-     display: flex;
-     align-items: center;
-     text-align: center;
-    }
-  
-   .text {
-     color: #fff;
-     font-size: 36px;
-     font-weight: bold;
-     padding: 20px;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    text-align: center;
     }
 
-   .containerDos {
-     width: 100%;
-     height: 75vh;
-     padding: 20px;
-     background-color: #E1DDD2;
+  .text {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
     }
 
-    .textDos {
-     color: black;
-     font-size: 14px;
-     font-weight: bold;
-     padding: 30px 50px;
-     align-items: center;
-     text-align: center;
+  .containerDos {
+    width: 100%;
+    height: 75vh;
+    padding: 20px;
+    background-color: #E1DDD2;
     }
 
-    .containerTres {
-     width: 100%;
-     height: 75vh;
-     padding: 20px;
-     background-color: #F7F2EF;
-     margin: 0 auto;
-     justify-content: center;
+  .textDos {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 30px 50px;
+    align-items: center;
+    text-align: center;
     }
 
-    .item  {
+  .containerTres {
+    width: 100%;
+    height: 75vh;
+    padding: 20px;
+    background-color: #F7F2EF;
+    margin: 0 auto;
+    justify-content: center;
+    }
+
+  .item  {
     display: flex;
     align-items: center;
     text-align: center;
@@ -63,156 +65,99 @@ body {
     justify-content: center;
     }
     
-    .icono {
+  .icono {
     width: 75px;
     height: 75px;
     }
 
-    .textTres {
-     color: black;
-     font-size: 14px;
-     font-weight: bold;
-     padding: 30px 50px;
-     align-items: center;
-     text-align: center;
+  .textTres {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 30px 50px;
+    align-items: center;
+    text-align: center;
     }
 
-    .containerCuatro {
-     width: 100%;
-     height: 75vh;
-     padding: 20px;
-     background-color: #E1DDD2;
+  .containerCuatro {
+    width: 100%;
+    height: 75vh;
+    padding: 20px;
+    background-color: #E1DDD2;
     }
 
-    .textCuatro {
-     color: black;
-     font-size: 14px;
-     font-weight: bold;
-     padding: 30px 50px;
-     align-items: center;
-     text-align: center;
+  .textCuatro {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 30px 50px;
+    align-items: center;
+    text-align: center;
     }
 
   footer {
     background-color: #555a54;
-    padding: 40px 0;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    display: flex;
   }
-  
-    .footer-main {
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 0 20px;
-    }
-  
-    .footer-logo {
-     width: 150px;
-     height: 150px;
-     background-image: url("../pictures/logoposada.jpeg");
-     background-size: cover;
-    }
-  
-    .footer-info p {
-     margin-bottom: 10px;
-     font-size: 14px;
-     color: white;
-    }
-  
-    .footer-social-list {
-     list-style: none;
-     padding: 0;
-     margin: 0;
-    }
-  
-    .footer-social-list li {
-     display: inline-block;
-     margin-right: 10px;
-    }
-  
-    .footer-social-list li a {
-     color: white;
-     font-size: 18px;
-    }
-  
-    .footer-contact h4 {
-     font-size: 18px;
-     color: white;
-     margin-bottom: 15px;
-    }
-  
-    .footer-contact p {
-     font-size: 14px;
-     color: white;
-     margin-bottom: 10px;
-    }
-  
-    .footer-site-links h4 {
-     font-size: 18px;
-     color: white;
-     margin-bottom: 15px;
-    }
-  
-    .list-links {
-     list-style: none;
-     padding: 0;
-     margin: 0;
-    }
-  
-    .list-links li {
-     margin-bottom: 10px;
-    }
-  
-    .list-links li a {
-     color: white;
-     font-size: 14px;
-    }
-  
-    .footer-subscribe h4 {
-     font-size: 18px;
-     color: white;
-     margin-bottom: 15px;
-    }
-  
-    .footer-subscribe iframe {
-     width: 100%;
-     height: 300px;
-     border: 0;
-    }
  
-    .footer-bottom {
-     background-color: #1d1919;
-     padding: 20px 0;
-     color: #fff;
-    }
-  
-    .footer-bottom .copyright {
-     text-align: center;
-     font-size: 14px;
-    }
-  
-    .footer-bottom #go-top {
-     text-align: center;
-     margin-top: 10px;
-    }
-  
-    .footer-bottom #go-top a {
-     color: #1d1919;
-     font-size: 16px;
-    }
-  
-  @media only screen and (max-width: 768px) {
-    .footer-info,
-    .footer-contact,
-    .footer-site-links,
-    .footer-subscribe {
-      margin-bottom: 40px;
-    }
-  
-    .footer-subscribe iframe {
-      height: 200px;
-    }
+  .footer-uno {
+    width: 33%;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
   }
 
-  .carousel {
+  .footer-dos {
+    width: 33%;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-tres {
+    width: 33%;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    width: 150px;
+    height: 150px;
+    background-image: url("../pictures/logoposada.jpeg");
+    background-size: cover;
+    }
+  
+  .footer-subscribe iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    }
+
+    @media screen and (max-width: 48rem) {
+      footer {
+        flex-direction: column;
+      }
+      .footer-uno, .footer-dos, .footer-tres {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+.posada {
+  margin: 20px;
+  padding: 20px;
+  min-height: 100vh;
+    }
+
+.carousel {
     height: 100%;
   }
   
@@ -232,3 +177,99 @@ body {
     width: 90%;
     height: 90%;
   }
+
+  .habitaciones {
+    margin: 20px;
+    padding: 30px;
+    min-height: 100vh;
+      }
+
+  .galeria {
+    display: flex;
+    height: 25rem;
+    gap: 16px;
+  }
+
+  .galeria div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .9s; cubic-bezier(.25, .4, 45, 1.4)
+  }
+
+  .galeria div:hover {
+    flex: 5;
+  }
+
+.row {
+  padding: 25px;
+}
+
+.tarjeta {
+  width: 260px;
+  height: 350px;
+  position: relative;
+  margin: 2rem;
+  border-radius: 7px;
+  box-shadow: 0 0 10px black;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.tarjeta .tarjeta-imagen {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tarjeta .tarjeta-contenido {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .6);
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+  transform: translateY(100%);
+
+  transition: 400ms ease;
+}
+
+.tarjeta .tarjeta-imagen:hover + .tarjeta-contenido, .tarjeta-contenido .tarjeta-contenido.tarjeta-imagen:hover {
+  transform: translateY(0);
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.central {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton {
+  color: white;
+  background-color: #555a54;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(53, 52, 52);
+}
