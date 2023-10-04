@@ -199,7 +199,7 @@
     transition: all .9s; cubic-bezier(.25, .4, 45, 1.4)
   }
 
-  .galeria div:hover {
+  .galeria div:hover{
     flex: 5;
   }
 
