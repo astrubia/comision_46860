@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerHome {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  background-image: url("../pictures/fotoportada.jpeg");
+  background-size: cover;
+}
+.containerHome .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.containerHome .overlay .text {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.containerDos {
+  width: 100%;
+  height: 75vh;
+  padding: 20px;
+  background-color: #E1DDD2;
+}
+.containerDos .textDos {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 30px 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.containerTres {
+  width: 100%;
+  height: 75vh;
+  padding: 20px;
+  background-color: #F7F2EF;
+  margin: 0 auto;
+  justify-content: center;
+}
+.containerTres .textTres {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 30px 50px;
+  align-items: center;
+  text-align: center;
+}
+.containerTres .textTres .item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+.containerTres .textTres .item .icono {
+  width: 75px;
+  height: 75px;
+}
+
+.containerCuatro {
+  width: 100%;
+  height: 75vh;
+  padding: 20px;
+  background-color: #E1DDD2;
+}
+.containerCuatro .textCuatro {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 30px 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.posada, .habitaciones {
+  margin: 20px;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.row {
+  padding: 25px;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.central {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #555a54;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  display: flex;
+}
+
+.footer-uno, .footer-tres, .footer-dos {
+  width: 33%;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 150px;
+  height: 150px;
+  background-image: url("../pictures/logoposada.jpeg");
+  background-size: cover;
+}
+
+.footer-subscribe iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+@media screen and (max-width: 48rem) {
+  footer {
+    flex-direction: column;
+  }
+  .footer-uno, .footer-dos, .footer-tres {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.tarjeta {
+  width: 260px;
+  height: 350px;
+  position: relative;
+  margin: 2rem;
+  border-radius: 7px;
+  box-shadow: 0 0 10px black;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.tarjeta .tarjeta-imagen {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tarjeta .tarjeta-contenido {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+  transform: translateY(100%);
+  transition: 400ms ease;
+}
+
+.tarjeta .tarjeta-imagen:hover + .tarjeta-contenido, .tarjeta-contenido .tarjeta-contenido.tarjeta-imagen:hover {
+  transform: translateY(0);
+}
+
+.carousel {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-inner img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-centered {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 90%;
+}
+
+.galeria {
+  display: flex;
+  height: 25rem;
+  gap: 16px;
+}
+
+.galeria div {
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 0.9s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+.galeria div:hover {
+  flex: 5;
+}
+
+.boton {
+  color: white;
+  background-color: #555a54;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(53, 52, 52);
+}/*# sourceMappingURL=style.css.map */

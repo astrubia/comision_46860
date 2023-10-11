@@ -1,0 +1,91 @@
+.containerHome {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background-image: url("../pictures/fotoportada.jpeg");
+    background-size: cover;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      text-align: center;
+      .text {
+          color: #fff;
+          font-size: 36px;
+          font-weight: bold;
+          padding: 20px;
+      }
+    }
+  }
+
+.containerDos {
+    @include container;
+    background-color: $background-color-principal;
+    .textDos {
+    @include text; 
+    } 
+  }
+
+.containerTres {
+    @include container;
+    background-color: #F7F2EF;
+    margin: 0 auto;
+    justify-content: center;
+    .textTres {
+      @include text;
+      .item  {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        justify-content: center;
+        .icono {
+          width: 75px;
+          height: 75px;
+        }
+      }
+    }
+  }
+
+.containerCuatro {
+    @include container;
+    background-color: $background-color-principal;
+    .textCuatro {
+    @include text;
+    }
+  }
+
+.posada {
+    margin: 20px;
+    padding: 20px;
+    min-height: 100vh;
+  }
+
+.habitaciones {
+    @extend .posada;
+  }
+
+.row {
+    padding: 25px;
+  }
+
+section {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+.central {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

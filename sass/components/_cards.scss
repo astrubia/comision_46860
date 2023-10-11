@@ -1,0 +1,42 @@
+.tarjeta {
+    width: 260px;
+    height: 350px;
+    position: relative;
+    margin: 2rem;
+    border-radius: 7px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .tarjeta .tarjeta-imagen {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .tarjeta .tarjeta-contenido {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 7px;
+    transform: translateY(100%);
+  
+    transition: 400ms ease;
+  }
+  
+  .tarjeta .tarjeta-imagen:hover + .tarjeta-contenido, .tarjeta-contenido .tarjeta-contenido.tarjeta-imagen:hover {
+    transform: translateY(0);
+  }

@@ -1,0 +1,18 @@
+.galeria {
+    display: flex;
+    height: 25rem;
+    gap: 16px;
+}
+.galeria div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .9s cubic-bezier(.25, .4, .45, 1.4);
+    
+    &:hover{
+        flex: 5;
+        }
+}
+
