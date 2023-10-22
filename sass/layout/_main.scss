@@ -1,8 +1,8 @@
 .containerHome {
     position: relative;
     width: 100%;
-    height: 75vh;
-    background-image: url("../pictures/fotoportada.jpeg");
+    height: 100vh;
+    background-image: url("../pictures/portada.jpeg");
     background-size: cover;
     .overlay {
       position: absolute;
@@ -75,12 +75,13 @@
   }
 
 section {
-    margin: 20px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 150vh;
+    background-image: url("../pictures/pileta.jpeg");
+    background-size:cover;
   }
 
 .central {
@@ -88,4 +89,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    .text-blanco
+    {
+      color: #fff;
+    }
   }
